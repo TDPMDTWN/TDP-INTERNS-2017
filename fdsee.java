@@ -15,8 +15,10 @@ public class fdsee {
     public static PrintWriter writer;
 
 
-    public static int docID = 1;
+    pblic static int docID = 1;
     public static int[] docIDList;
+
+
 
     public static Hashtable<String, Integer> hashWordList;
 
@@ -47,7 +49,7 @@ public class fdsee {
 
         int sizeTemp = list1.length + list2.length;
 
-        int[] swit = list1;
+        it[] swit = list1;
 
         if(list1.length < list2.length){
             list1 = list2;
@@ -70,7 +72,7 @@ public class fdsee {
                if(i < list1.length){
                    temp[index] = list1[i++]; 
                } else if(j < list1.length){
-                   temp[index] = list2[j++];
+                   tempindex] = list2[j++];
                }
             }
 
@@ -89,15 +91,15 @@ public class fdsee {
     public static int[] findDuplicates(int[] list){
        
         if(list == null)
-            return null;
+            rturn null;
 
-        int size = list.length - 1;
+        it size = list.length - 1;
 
         ArrayList<Integer> array = new ArrayList<Integer>();
        
         for(int i = 0; i < size; i++){
             if(list[i] == list[i+1]){
-                array.add(list[i]);
+                array.add(listi]);
             }
         }
 
@@ -107,7 +109,7 @@ public class fdsee {
         int[] array2 = new int[array.size()];
 
         for(int i = 0; i < array.size(); i++){
-            array2[i] = arr[i];
+            array2i] = arr[i];
         }
 
         return array2; 
