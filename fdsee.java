@@ -90,7 +90,7 @@ public class fdsee {
     public static int[] findDuplicates(int[] list){
        
         if(list == null)
-            rturn null;
+            return null;
 
         it size = list.length - 1;
 
